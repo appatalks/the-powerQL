@@ -1,0 +1,3 @@
+{
+  "query": "query { repository(owner: \"OWNER\", name: \"REPOSITORY\") { pullRequest(number: 420) { headRef { name branchProtectionRule { pattern requiredStatusCheckContexts requiredApprovingReviewCount } } baseRef { name branchProtectionRule { pattern requiredStatusCheckContexts requiredApprovingReviewCount } } } } }"
+}
