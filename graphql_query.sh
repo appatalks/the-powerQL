@@ -52,7 +52,7 @@ echo ""
 # Send the GraphQL query to the GitHub API
 response=$(curl -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" https://api.github.com/graphql)
 
-echo $response
+# echo $response
 
 # Check if the response contains the "data" field and "errors" field
 if echo "$response" | jq '.data,.errors' &> /dev/null; then
