@@ -1,0 +1,3 @@
+{
+  "query": "query { organization(login:\"__ORGINIZATION__\") { membersWithRole(first: 100) { edges { node { name avatarUrl } } } } }"
+}
