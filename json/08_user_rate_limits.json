@@ -1,0 +1,1 @@
+{ "query": "{ user(login: \"__USERNAME__\") { login } rateLimit { limit cost remaining resetAt } }" }
