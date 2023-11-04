@@ -1,1 +1,2 @@
-{ "query": "{ user(login: \"__USERNAME__\") { login } rateLimit { limit cost remaining resetAt } }" }
+{ "query": "{ user(login: \"__USERNAME__\") { login } rateLimit { cost limit nodeCount remaining resetAt used } }" }
+
