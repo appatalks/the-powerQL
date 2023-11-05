@@ -1,2 +1,0 @@
-{ "query": "mutation { addComment(input:{clientMutationId: \"gql_420\", subjectId: \"__ISSUE_ID__\", body: \"__COMMENT__\"}) { clientMutationId commentEdge { node { body repository { id name nameWithOwner } issue { number } } } } }" }
-

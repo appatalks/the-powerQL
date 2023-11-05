@@ -8,14 +8,14 @@ log_file="/tmp/graphql_interactive-$(date +'%Y%m%d-%H%M%S').json"
 export log_file=$log_file
 
 # Define an array with available top-level choices
-top_level_choices=("Owner Query" "Organization Query")
+top_level_choices=("GraphQL Query" "Organization Query")
 
 # Define sub-queries for each category
-owner_queries=(
+graphql_queries=(
   "Login Check" 
-  "Review Closed Issues" 
   "Get ID of Repo"
   "Find Issue ID"
+  "Review Closed Issues" 
   "Add Reaction to Issue"
   "Add Comment to Issue"
   "Check User Rate Limits"
@@ -23,10 +23,7 @@ owner_queries=(
   "Review Branch Protection Rules for Pull Request"
   "Check Repo Disk Usage"
 )
-organization_queries=(
-  "Login Check" 
-  "Add Reaction to Issue" 
-  "Add Comment to Issue"
+organization_queries=( 
   "List Organization Members"
   "Get Repository IDs"
   "List Repository Languages"
@@ -47,8 +44,8 @@ while true; do
   if [[ "$top_level_choice" =~ ^[0-9]+$ ]] && [ "$top_level_choice" -ge 0 ] && [ "$top_level_choice" -lt ${#top_level_choices[@]} ]; then
     # Depending on the top-level choice, set the prefix for query_file
     if [ "$top_level_choice" -eq 0 ]; then
-      query_file_prefix="u"
-      sub_queries=("${owner_queries[@]}")
+      query_file_prefix="g"
+      sub_queries=("${graphql_queries[@]}")
     else
       query_file_prefix="o"
       sub_queries=("${organization_queries[@]}")
