@@ -8,6 +8,11 @@ This is a bash script that works with the GitHub GraphQL API.
 ./run_interactive.sh
 ```
 
+or
+
+```bash
+./graphql_query.sh json/$query.json
+```
 ## Prerequisites
 
 - Make sure you have set the required GitHub API token in the `TOKEN` environment variable. Example: `export TOKEN=ghp_****`
