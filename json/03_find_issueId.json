@@ -1,3 +1,1 @@
-{
-  "query": "query FindIssueID { repository(owner:\"__OWNER__\", name:\"__REPO__\") { issue(number:__ISSUE_NUMBER__) { id } } }"
-}
+{ "query": "query FindIssueID { repository(owner:\"__OWNER__\", name:\"__REPO__\") { issue(number:__ISSUE_NUMBER__) { id } } }" }

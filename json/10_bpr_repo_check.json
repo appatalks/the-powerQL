@@ -1,0 +1,1 @@
+{ "query": "query { repository(owner: \"__OWNER__\", name: \"__REPO__\") { branchProtectionRules(last: 10) { edges { node { id pattern isAdminEnforced allowsDeletions requiresStatusChecks requiresStrictStatusChecks dismissesStaleReviews restrictsReviewDismissals requiredApprovingReviewCount } } } } }" }

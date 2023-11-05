@@ -1,3 +1,1 @@
-{
-  "query": "{ organization(login: \"__ORGINIZATION__\") { repositories(first: 100, isFork: false, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: CREATED_AT}) { totalCount pageInfo { hasNextPage hasPreviousPage } totalDiskUsage nodes { nameWithOwner isPrivate languages(first: 100, orderBy: {direction: DESC, field: SIZE}) { totalCount edges { node { name } size } } } } } }"
-}
+{ "query": "{ organization(login: \"__ORGINIZATION__\") { repositories(first: 100, isFork: false, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: CREATED_AT}) { totalCount pageInfo { hasNextPage hasPreviousPage } totalDiskUsage nodes { nameWithOwner isPrivate languages(first: 100, orderBy: {direction: DESC, field: SIZE}) { totalCount edges { node { name } size } } } } } }" }

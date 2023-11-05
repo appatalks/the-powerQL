@@ -1,3 +1,1 @@
-{
-  "query": "{ organization(login: \"__ORGINIZATION__\") { repositories(last: 100) { edges { cursor node { name url id } } } } }"
-}
+{ "query": "{ organization(login: \"__ORGINIZATION__\") { repositories(last: 100) { edges { cursor node { name url id } } } } }" }

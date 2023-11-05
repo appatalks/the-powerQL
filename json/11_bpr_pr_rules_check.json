@@ -1,0 +1,1 @@
+{ "query": "query { repository(owner: \"__OWNER__\", name: \"__REPO__\") { pullRequest(number: __PR__) { headRef { name branchProtectionRule { pattern requiredStatusCheckContexts requiredApprovingReviewCount } } baseRef { name branchProtectionRule { pattern requiredStatusCheckContexts requiredApprovingReviewCount } } } } }" }
