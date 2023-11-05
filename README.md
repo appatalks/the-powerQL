@@ -23,7 +23,7 @@ The script prompts for variables in the query template. It identifies variables 
 
 ## Response
 
-The script sends the GraphQL query to the GitHub API and displays the result in JSON format. 
+The script sends the GraphQL query to the GitHub API and displays the result. 
 
 Some queires can ```POST``` for example ```04_add_reaction_issueId.json```.
 
