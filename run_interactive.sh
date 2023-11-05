@@ -82,6 +82,7 @@ while true; do
   # Ask the user if they want to run another query
   read -p "Do you want to run another query? (y)es/(n)o: " run_again
   if [ "$run_again" != "y" ]; then
+    echo -e "\e[32mLog File Saved to $log_file\e[0m"	  
     break
   fi
 done
