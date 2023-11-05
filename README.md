@@ -5,7 +5,7 @@ This is a bash script that works with the GitHub GraphQL API.
 ## Usage
 
 ```bash
-./graphql_query.sh graphpql_query.json
+./run_interactive.sh
 ```
 
 ## Prerequisites
