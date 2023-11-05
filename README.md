@@ -11,7 +11,7 @@ This is a bash script that works with the GitHub GraphQL API.
 or
 
 ```bash
-./graphql_query.sh json/$query.json
+./graphql_query.sh graphql_query.json
 ```
 ## Prerequisites
 
