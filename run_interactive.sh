@@ -23,6 +23,7 @@ done
 echo ""
 
 read -p "Your choice: " user_choice
+echo ""
 
 # Check if the user's choice is valid
 if [[ "$user_choice" =~ ^[0-9]+$ ]] && [ "$user_choice" -ge 0 ] && [ "$user_choice" -lt ${#choices[@]} ]; then

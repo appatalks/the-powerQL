@@ -66,7 +66,7 @@ if echo "$response" | jq '.data,.errors' &> /dev/null; then
   "repository": null
 }' ]; then
     echo -e "\e[32mGraphQL query result (Data):\e[0m"
-    echo ""
+    echo -e "" 
     echo "$data_response" | jq
   else
     echo -e "\e[91mNo valid results found for the GraphQL query.\e[0m"
@@ -74,9 +74,9 @@ if echo "$response" | jq '.data,.errors' &> /dev/null; then
   fi
 
   if [ "$errors_response" != "null" ]; then
-    echo ""	  
+    echo "\n "	  
     echo -e "\e[91mGraphQL query result (Errors):\e[0m"
-    echo ""
+    echo -e ""
     echo "$errors_response" | jq
   fi
 fi
