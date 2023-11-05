@@ -5,6 +5,7 @@
 
 # Define the log file path
 log_file="/tmp/graphql_interactive-$(date +'%Y%m%d-%H%M%S').json"
+export log_file=$log_file
 
 # Define an array with available top-level choices
 top_level_choices=("Owner Query" "Organization Query")
