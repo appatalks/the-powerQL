@@ -22,6 +22,7 @@ graphql_queries=(
   "Review Branch Protection Rules"
   "Review Branch Protection Rules for Pull Request"
   "Check Repo Disk Usage"
+  "Check Suite ID by Pull Request"
 )
 organization_queries=( 
   "List Organization Members"
