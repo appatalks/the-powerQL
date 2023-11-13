@@ -1,0 +1,1 @@
+{ "query": "query { repository(owner: \"__OWNER__\", name: \"__REPO__\") { pullRequest(number: __PR__) { commits(last: 1) { nodes { commit { checkSuites(last: 10) { nodes { id checkRuns(last: 10) { nodes { id } } } } } } } } } }" }
