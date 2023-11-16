@@ -10,6 +10,12 @@ if [ -z "$TOKEN" ]; then
   exit 1
 fi
 
+# Check if the required GitHub API Endpoint is set
+if [ -z "$ENDPOINT" ]; then
+  echo "Error: Please set the GitHub GraphQL Endpoint in the environment variable."
+  exit 1
+fi
+
 # Check if a query file is provided as an argument
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <query_file>"
@@ -50,7 +56,10 @@ QUERY_TEMPLATE=$(extract_and_prompt_variables "$QUERY_TEMPLATE")
 echo ""
 
 # Send the GraphQL query to the GitHub API
-response=$(curl -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" https://api.github.com/graphql)
+# response=$(curl -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" https://api.github.com/graphql)
+# response=$(curl -k -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" https://HOSTNAME/api/graphql)
+# response=$(curl -k -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" $ENDPOINT)
+response=$(curl -s -H "Authorization: bearer $TOKEN" -X POST -d "$QUERY_TEMPLATE" $ENDPOINT)
 
 log_query=$(echo $QUERY_TEMPLATE)
 echo -e "\n\e[32mQuery: \e[0m" >> "$log_file"

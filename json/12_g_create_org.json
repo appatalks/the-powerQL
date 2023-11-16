@@ -1,0 +1,1 @@
+{ "query": "mutation NewOrg { createEnterpriseOrganization(input: { adminLogins: [\"__ADMIN_USER__\"], billingEmail: \"__EMAIL__\", enterpriseId: \"__ENT_ID__\", login: \"__NEWORG__\", profileName: \"__NEWORG__\" }) { enterprise { id } } }" }

@@ -7,6 +7,24 @@
 log_file="/tmp/graphql_interactive-$(date +'%Y%m%d-%H%M%S').json"
 export log_file=$log_file
 
+echo "Is this dotcom or server?"
+read -r environment
+
+if [ "$environment" == "dotcom" ]; then
+    # Set endpoint for GitHub.com
+    ENDPOINT="https://api.github.com/graphql"
+    export ENDPOINT=$ENDPOINT
+elif [ "$environment" == "server" ]; then
+    # Set endpoint for GitHub Enterprise
+    echo "Enter the hostname for GitHub Enterprise:"
+    read -r hostname
+    ENDPOINT="https://$hostname/api/graphql"
+    export ENDPOINT=$ENDPOINT
+else
+    echo "Invalid environment. Please enter 'dotcom' or 'Server'."
+    exit 1
+fi
+
 # Define an array with available top-level choices
 top_level_choices=("GraphQL Query" "Organization Query")
 
@@ -23,6 +41,8 @@ graphql_queries=(
   "Review Branch Protection Rules for Pull Request"
   "Check Repo Disk Usage"
   "Check Suite ID by Pull Request"
+  "Check Enterprise ID"
+  "Create an Organization"
 )
 organization_queries=( 
   "List Organization Members"
