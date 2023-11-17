@@ -74,9 +74,7 @@ if echo "$response" | jq '.data,.errors' &> /dev/null; then
   # echo $data_response
   # echo $errors_response
 
-  if [ "$data_response" != '{
-  "repository": null
-}' ]; then
+  if [ "$data_response" != '{"repository": null' ] && [ "$data_response" != 'null' ]; then
     echo -e "\e[32mGraphQL query result (Data):\e[0m"
     echo -e "" 
     echo "$data_response" | jq

@@ -43,6 +43,7 @@ graphql_queries=(
   "Check Suite ID by Pull Request"
   "Check Enterprise ID"
   "Create an Organization"
+  "List Repo Objects"
 )
 organization_queries=( 
   "List Organization Members"
