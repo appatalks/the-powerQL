@@ -1,6 +1,6 @@
 # The-PowerQL - Interactive GraphQL Query
 
-This is an interactive bash script that works with the GitHub GraphQL API. It's goal is to help you learn to interact with and understand GitHub GraphQL API's. Additional queires can be formulated and ran directly as JSON formatted strings. 
+This is an interactive bash script that works with the GitHub GraphQL API. It's goal is to help you interact with GitHub GraphQL API's. Additional queires can be formulated and ran directly as JSON formatted strings. 
 
 ## Usage
 
