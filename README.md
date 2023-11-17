@@ -1,6 +1,6 @@
-# GraphQL Query Script
+# The-PowerQL - Interactive GraphQL Query
 
-This is a bash script that works with the GitHub GraphQL API.
+This is an interactive bash script that works with the GitHub GraphQL API. It's goal is to help you learn to interact with and understand GitHub GraphQL API's. Additional queires can be formulated and ran directly as JSON formatted strings. 
 
 ## Usage
 
@@ -13,6 +13,7 @@ or
 ```bash
 ./graphql_query.sh graphql_query.json
 ```
+
 ## Prerequisites
 
 - Make sure you have set the required GitHub API token in the `TOKEN` environment variable. Example: `export TOKEN=ghp_****`
@@ -33,3 +34,9 @@ Note: If no valid results are found for the GraphQL query, it will display a cor
 > https://docs.github.com/en/graphql/guides/forming-calls-with-graphql
 > >
 > https://docs.github.com/en/graphql/overview/about-the-graphql-api
+
+## Note
+
+This is a very early work-in-progress project. The design, functioanlity, the way I do documentation -- all likely to change over time. 
+
+### Inspired by [gm3dmo/the-power](https://github.com/gm3dmo/the-power)- A simple test framework for GitHub's API's.
