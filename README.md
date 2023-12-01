@@ -41,4 +41,4 @@ This is a very early work-in-progress project. The design, functioanlity, the wa
 
 ### Inspired by [gm3dmo/the-power](https://github.com/gm3dmo/the-power)- A simple test framework for GitHub's API's.
 
-Rev:001
+Rev:002
