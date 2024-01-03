@@ -21,7 +21,7 @@ elif [ "$environment" == "server" ]; then
     ENDPOINT="https://$hostname/api/graphql"
     export ENDPOINT=$ENDPOINT
 else
-    echo "Invalid environment. Please enter 'dotcom' or 'Server'."
+    echo "Invalid environment. Please enter 'dotcom' or 'server'."
     exit 1
 fi
 
