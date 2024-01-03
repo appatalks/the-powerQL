@@ -49,6 +49,8 @@ organization_queries=(
   "List Organization Members"
   "Get Repository IDs"
   "List Repository Languages"
+  "Get Project ID"
+  "List Project Details"
 )
 
 while true; do

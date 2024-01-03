@@ -1,0 +1,1 @@
+{"query":"query{node(id:\"__PROJECT_ID__\"){...on ProjectV2{fields(first:20){nodes{...on ProjectV2Field{id name}...on ProjectV2IterationField{id name configuration{iterations{startDate id}}}...on ProjectV2SingleSelectField{id name options{id name}}}}}}}"}
