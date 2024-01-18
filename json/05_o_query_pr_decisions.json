@@ -1,5 +1,5 @@
 {
-  "query": "query ($cursor: String) { organization(login: \"__ORGANIZATION__\") { repositories(first: __REPO_COUNT__, after: $cursor) { pageInfo { endCursor hasNextPage } nodes { name pullRequests(last: __NUMBER_OF_PRS__, states: MERGED) { nodes { reviewDecision mergedAt } } } } } }",
+  "query": "query ($cursor: String) { organization(login: \"__ORGANIZATION__\") { repositories(first: __REPO_COUNT__, after: $cursor) { pageInfo { endCursor startCursor hasNextPage hasPreviousPage } nodes { name pullRequests(last: __NUMBER_OF_PRS__, states: MERGED) { nodes { reviewDecision mergedAt } } } } } }",
   "variables": {
     "cursor": null
   }

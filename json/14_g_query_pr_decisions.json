@@ -1,0 +1,1 @@
+{ "query": "query { repository(owner: \"__OWNER__\", name: \"__REPOSITORY__\") { pullRequests(last: 50, states: MERGED) { nodes { reviewDecision, mergedAt } } } }" }

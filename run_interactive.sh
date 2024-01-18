@@ -44,6 +44,7 @@ graphql_queries=(
   "Check Enterprise ID"
   "Create an Organization"
   "List Repo Objects"
+  "Query Pull Request Decisions"
 )
 organization_queries=( 
   "List Organization Members"
