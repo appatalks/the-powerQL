@@ -1,0 +1,1 @@
+{ "query": "query {organization(login: \"__ORGINIZATION__\") {repositories(first: __REPO_COUNT__) {nodes {name pullRequests(last: __NUMBER_OF_PRS__, states: MERGED) {nodes {reviewDecision mergedAt}}}}}}" }

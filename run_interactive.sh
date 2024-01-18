@@ -51,6 +51,7 @@ organization_queries=(
   "List Repository Languages"
   "Get Project ID"
   "List Project Details"
+  "Query Pull Request Decisions"
 )
 
 while true; do
