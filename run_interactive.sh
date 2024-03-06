@@ -54,6 +54,7 @@ organization_queries=(
   "Get Project ID"
   "List Project Details"
   "Query Pull Request Decisions"
+  "Get Organization ID"
 )
 
 while true; do

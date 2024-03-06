@@ -1,0 +1,1 @@
+{"query":"{organization(login:\"__ORG_NAME__\"){id}}"}
