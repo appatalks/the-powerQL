@@ -1,0 +1,1 @@
+{"query": "query($org: String!) { organization(login: $org) { membersWithRole(first: 10) { nodes { login email } } } }", "variables": { "org": "__ORGANIZATION__" }}
