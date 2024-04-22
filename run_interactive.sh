@@ -55,7 +55,7 @@ organization_queries=(
   "List Project Details"
   "Query Pull Request Decisions"
   "Get Organization ID"
-  "Get EMU Organization Emails"
+  "Get Organization Emails"
 )
 
 while true; do
