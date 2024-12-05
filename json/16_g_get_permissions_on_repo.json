@@ -1,0 +1,1 @@
+{ "query": "{ repository(owner: \"__OWNER__\", name: \"__REPO__\") { collaborators(first: 50) { totalCount edges { permission permissionSources { permission roleName source { __typename ... on Organization { login } ... on Repository { name } ... on Team { slug } } } node { login name } } pageInfo { endCursor hasNextPage hasPreviousPage startCursor } } } }" }
